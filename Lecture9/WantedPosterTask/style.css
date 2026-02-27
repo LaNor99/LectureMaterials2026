@@ -1,0 +1,31 @@
+body {
+    background: #f4ecd8;
+    font-family: Georgia, serif;
+    margin: 20px;
+}
+
+.poster{
+    background: #f8f1df;
+    border: 3px solid #4a3b2a;
+    padding: 15px;
+    box-shadow: 4px 4px 0 #b89b6d;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3b2f22;
+    margin: 10px 0;
+}
+
+p {
+    margin-bottom: 0;
+    font-style: italic;
+}
