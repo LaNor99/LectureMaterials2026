@@ -2,13 +2,9 @@
   "name": "npm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "serve ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "uuid": "^13.0.0"
   },
