@@ -52,3 +52,16 @@ h1 {
 .card {
     position: relative;
 }
+
+/* Tvinger beige farge på alle knapper og fjerner hvit bakgrunn */
+.accordion-button, .accordion-body {
+    background-color: #e6d5aa !important; 
+    border: 1px solid #5a3e1b !important;
+}
+
+/* Fjerner blå glød og sikrer fargen når knappen er åpen eller i fokus */
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    background-color: #e6d5aa !important; 
+    box-shadow: none !important;
+}
