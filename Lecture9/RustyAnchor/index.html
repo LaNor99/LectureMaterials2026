@@ -4,52 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Rusty Anchor Inn - Menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
     <header>
-        <h1>The Rusty Anchor Inn</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">⚓ The Rusty Anchor Inn</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="menu">
-        <h2>Food & Drink Menu</h2>
+    <main class="flex-grow-1 pt-5 mt-5">
+        <section id="menu" class="container text-center mb-5">
+            <h2 class="text-muted mb-4">Food & Drink Menu</h2>
 
-        <div class="menu-item">
-            <h3>⚓ Grog</h3>
-            <p>A traditional pirate drink made with watered-down rum, citrus, and a touch of sugar. Keeps scurvy away!</p>
-            <p><strong>Allergy Info:</strong> Citrus and alcohol.</p>
-        </div>
+            <div class="accordion" id="menuAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrog">
+                            ⚓ Grog
+                        </button>
+                    </h3>
+                    <div id="collapseGrog" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <p>A traditional pirate drink made with watered-down rum, citrus, and a touch of sugar.</p>
+                            <p class="small text-danger"><strong>Allergy:</strong> Citrus and alcohol.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="menu-item">
-            <h3>🏴‍☠️ Blackbeard’s Rum</h3>
-            <p>Aged 10 years, strong enough for a true pirate. Not for the faint of heart!</p>
-            <p><strong>Allergy Info:</strong> Alcohol.</p>
-        </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRum">
+                            🏴‍☠️ Blackbeard’s Rum
+                        </button>
+                    </h3>
+                    <div id="collapseRum" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <p>Aged 10 years, strong enough for a true pirate. Not for the faint of heart!</p>
+                            <p class="small text-danger"><strong>Allergy:</strong> Alcohol.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="menu-item">
-            <h3>🐟 Catch of the Day</h3>
-            <p>Freshly caught from the sea, grilled to perfection with a side of roasted vegetables.</p>
-            <p><strong>Allergy Info:</strong> Contains fish and may contain traces of shellfish.</p>
-        </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatch">
+                            🐟 Catch of the Day
+                        </button>
+                    </h3>
+                    <div id="collapseCatch" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <p>Freshly caught from the sea, grilled to perfection with a side of roasted vegetables.</p>
+                            <p class="small text-danger"><strong>Allergy:</strong> Fish and shellfish.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="menu-item">
-            <h3>🍞 Ship’s Biscuit</h3>
-            <p>Hard-baked biscuit made from flour, water and salt, perfect for long voyages. Served with a side of salted beef.</p>
-            <p><strong>Allergy Info:</strong> Contains gluten, dairy and beef.</p>
-        </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBisquit">
+                            🍞 Ship’s Biscuit
+                        </button>
+                    </h3>
+                    <div id="collapseBisquit" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <p>Hard-baked biscuit perfect for long voyages. Served with a side of salted beef.</p>
+                            <p class="small text-danger"><strong>Allergy:</strong> Gluten, dairy and beef.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </section>
-
-    <footer id="contact">
+    <footer id="contact" class="bg-dark text-light py-4 text-center">
         <p>Contact us at: tavern@rustyanchor.com</p>
+        <p class="small">&copy; 2026 The Rusty Anchor Inn</p>
     </footer>
-
 </body>
 </html>
